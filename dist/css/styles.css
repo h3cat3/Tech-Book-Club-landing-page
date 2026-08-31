@@ -1,0 +1,321 @@
+:root {
+  --neutral-900: hsl(194, 78%, 11%);
+  --neutral-700: hsl(195, 23%, 28%);
+  --neutral-200: hsl(17, 12%, 89%);
+  --neutral-100: hsl(17, 41%, 97%);
+  --neutral-0: hsl(0, 0%, 100%);
+  --light-salmon-500: hsl(22, 99%, 72%);
+  --light-salmon-100: hsl(22, 100%, 91%);
+  --light-salmon-50: hsl(23, 100%, 97%);
+  --text-gradient: linear-gradient(107deg, #FF0A60 -11.37%, #062630 61.84%);
+  --gradient: linear-gradient(90deg, #FFE2D1 0%, #FFF5EF 100%);
+}
+
+@font-face {
+  font-family: "Martian Mono";
+  src: url("../../assets/fonts/martian-mono/MartianMono-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: Inter;
+  src: url("../../assets/fonts/inter/Inter-VariableFont_opsz,wght.ttf") format("truetype");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: inherit;
+  border: none;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  padding: 1.5rem 1rem;
+  color: var(--neutral-700);
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  letter-spacing: -0.5px;
+  overflow-x: hidden;
+}
+@media (min-width: 48rem) {
+  body {
+    padding: 2rem;
+  }
+}
+@media (min-width: 64rem) {
+  body {
+    padding: 2rem 8.4375rem;
+  }
+}
+
+.display-in-line {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.display-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(21rem, 1fr));
+  gap: 1.5rem;
+  justify-content: space-between;
+}
+
+.bottom-space {
+  margin-bottom: 1rem;
+}
+@media (min-width: 48rem) {
+  .bottom-space {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.relative-container {
+  position: relative;
+  display: inline-block;
+  padding: 0.8rem;
+}
+
+.decorative-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-54%, -48%);
+}
+
+.social {
+  display: none;
+}
+@media (min-width: 48rem) {
+  .social {
+    position: absolute;
+    display: block;
+    bottom: 10%;
+    right: 10%;
+  }
+}
+@media (min-width: 64rem) {
+  .social {
+    bottom: 25%;
+    right: 45%;
+    transform: translate(50%, 50%);
+  }
+}
+
+.index {
+  border: 2px solid var(--neutral-900);
+  border-radius: 5px;
+  text-align: center;
+  padding: 0.2rem;
+  margin-bottom: 1.25rem;
+  width: 2rem;
+  height: 2rem;
+}
+
+.arrow {
+  display: none;
+}
+@media (min-width: 64rem) {
+  .arrow {
+    display: block;
+    position: absolute;
+    top: 10%;
+    left: -7rem;
+  }
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  padding: 3rem 0 4rem;
+}
+@media (min-width: 48rem) {
+  .main {
+    padding: 4rem 0 5rem;
+  }
+}
+@media (min-width: 64rem) {
+  .main {
+    flex-direction: row;
+    padding: 5rem 0;
+  }
+}
+@media (min-width: 64rem) {
+  .main--reverse {
+    flex-direction: row-reverse;
+  }
+}
+@media (min-width: 64rem) {
+  .main--column {
+    flex-direction: column;
+  }
+}
+.main__breake {
+  border: 1px solid var(--neutral-200);
+}
+.main__title {
+  font-family: "Martian Mono";
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 120%;
+  letter-spacing: -2px;
+  color: var(--neutral-900);
+  margin-bottom: 2rem;
+}
+.main__title--small {
+  font-family: "Martian Mono";
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 130%;
+  letter-spacing: -2px;
+}
+.main__title--smaller {
+  font-family: "Martian Mono";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 110%;
+  letter-spacing: -1px;
+  color: var(--neutral-900);
+}
+@media (min-width: 48rem) {
+  .main__title {
+    font-family: "Martian Mono";
+    font-weight: 700;
+    font-size: 62px;
+    line-height: 120%;
+    letter-spacing: -2px;
+    margin-bottom: 1.5rem;
+  }
+  .main__title--small {
+    font-family: "Martian Mono";
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 130%;
+    letter-spacing: -2px;
+  }
+  .main__title--center {
+    text-align: center;
+  }
+}
+.main__btn {
+  width: 100%;
+  max-width: 30rem;
+  border-radius: 8px;
+  border: 2px solid var(--neutral-900);
+  padding: 1.25rem 1.5rem;
+  margin: 1.5rem 0 1.25rem;
+  text-transform: uppercase;
+  color: var(--neutral-900);
+  font-family: "Martian Mono";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 130%;
+  letter-spacing: -1px;
+}
+@media (min-width: 64rem) {
+  .main__btn {
+    font-family: "Martian Mono";
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 130%;
+    letter-spacing: -1px;
+  }
+}
+.main__member {
+  width: 100%;
+  max-width: 30rem;
+  justify-content: start;
+  margin-top: 1.25rem;
+  font-family: "Martian Mono";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+  letter-spacing: -1px;
+}
+.main__member-avatar {
+  width: 30%;
+  justify-content: start;
+}
+@media (min-width: 64rem) {
+  .main__content {
+    min-width: 25rem;
+    margin: auto;
+    flex-grow: 1;
+  }
+}
+.main__image {
+  border-radius: 5px;
+}
+@media (min-width: 48rem) {
+  .main__image {
+    border-radius: 10px;
+  }
+}
+@media (min-width: 64rem) {
+  .main__image {
+    display: flex;
+    width: auto;
+    border-radius: 8px;
+  }
+}
+.main__text--bold {
+  font-family: "Martian Mono";
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 130%;
+  letter-spacing: -1px;
+  color: var(--neutral-900);
+}
+.main__item {
+  list-style: none;
+  position: relative;
+  font-family: "Martian Mono";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 130%;
+  letter-spacing: -1px;
+  color: var(--neutral-900);
+  margin-bottom: 2rem;
+  margin-left: 1rem;
+}
+@media (min-width: 48rem) {
+  .main__item {
+    font-family: "Martian Mono";
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 130%;
+    letter-spacing: -1px;
+    margin: 2rem;
+  }
+}
+@media (min-width: 64rem) {
+  .main__list {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.main__article {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin: 1.5rem;
+}
+
+.visually__hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  opacity: 0;
+}/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,24 @@
+$typography: (
+    text-1: ("Martian Mono", 700, 62px, 120%, -2px),
+    text-1-mobile: ("Martian Mono", 700, 38px, 120%, -2px),
+    text-2: ("Martian Mono", 600, 50px, 130%, -2px),
+    text-2-mobile: ("Martian Mono", 600, 34px, 130%, -2px),
+    text-3: ("Martian Mono", 600, 34px, 130%, -1px),
+    text-3-mobile: ("Martian Mono", 600, 24px, 110%, -1px),
+    text-4: ("Martian Mono", 400, 24px, 110%, -1px),
+    text-4-sbold: ("Martian Mono", 600, 24px, 110%, -1px),
+    text-5: ("Inter", 400, 20px, 140%, -0.5px),
+    text-5-sbold: ("Inter", 600, 20px, 140%, -0.5px),
+    text-6: ("Martian Mono", 600, 18px, 130%, -1px),
+    text-6-mobile: ("Martian Mono", 600, 16px, 130%, -1px),
+    text-7: ("Martian Mono", 400, 14px, 120%, -1px),
+);
+
+@mixin text-style($name){
+    $values: map-get($typography, $name);
+    font-family: nth($values, 1);
+    font-weight: nth($values, 2);
+    font-size: nth($values, 3);
+    line-height: nth($values, 4);
+    letter-spacing: nth($values, 5);
+}

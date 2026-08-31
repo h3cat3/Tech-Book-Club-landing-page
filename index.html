@@ -5,59 +5,63 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="./dist/css/styles.css">
   <title>Frontend Mentor | Tech book club</title>
 </head>
 <body>
   <header>
-    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <a href="#main" class="visually__hidden">Skip to main content</a>
     <img src="./assets/images/logo.svg" alt="Tech Book Club Logo">
   </header>
-<main id="main-content">
-  <section class="main__container">
+<main id="main">
+  <!-- first section join the club -->  
+  <section class="main">
     <div class="main__content">
-      <h1 class="main__title">Join the ultimate tech book club</h1> 
-      <p class="main__description">Turn your reading time into learning time with fellow tech enthusiasts. 
+      <h1 class="main__title">Join the </br> ultimate tech </br> book club</h1> 
+      <p>Turn your reading time into learning time with fellow tech enthusiasts. 
   Get curated recommendations, join vibrant discussions, and level up your 
   skills one chapter at a time.</p>
-      <button class="main__btn">Review membership options 
+      <button class="main__btn display-in-line">Review membership options 
         <img src="./assets/images/icon-arrow-down.svg" alt="">
       </button>
-      <div class="flex">
-        <img src="./assets/images/image-avatars.webp" alt="Member avatars">
-        <div class="memberas__counter" aria-label="5 out of 5 stars">
-          <img src="./assets/images/icon-star.svg" alt="">
-          <img src="./assets/images/icon-star.svg" alt="">
-          <img src="./assets/images/icon-star.svg" alt="">
-          <img src="./assets/images/icon-star.svg" alt="">
-          <img src="./assets/images/icon-star.svg" alt="">
+      <div class="main__member display-in-line">
+        <img class="main__member-avatar" src="./assets/images/image-avatars.webp" alt="Member avatars">
+        <div>
+          <div class="member__counter" aria-label="5 out of 5 stars">
+            <img src="./assets/images/icon-star.svg" alt="">
+            <img src="./assets/images/icon-star.svg" alt="">
+            <img src="./assets/images/icon-star.svg" alt="">
+            <img src="./assets/images/icon-star.svg" alt="">
+            <img src="./assets/images/icon-star.svg" alt="">
+          </div>
           <p>200+ developers joined already</p>
         </div>
       </div>
     </div>
-      <picture>
+      <picture >
         <source media="(min-width: 1024px)" srcset="./assets/images/image-hero-desktop.webp">
         <source media="(min-width: 780px)" srcset="./assets/images/image-hero-tablet.webp">
-        <img src="./assets/images/image-hero-mobile.webp" alt="three people looking in one book">
+        <img class="main__image" src="./assets/images/image-hero-mobile.webp" alt="three people looking in one book">
       </picture>
   </section>
-  <section class="main__container">
-    <div class="main__content">
 
-      <h2 class="main__subtitle"> Read together, grow together</h2>
-      <div class="">
+  <!-- second section read together, grow together -->
+  <section class="main main--reverse">
+    <div class="main__content">
+      <h2 class="main__title main__title--small"> Read together, grow together</h2>
+      <div class="display-in-line bottom-space">
         <img src="./assets/images/icon-check.svg" alt="check">
         <p>Monthly curated tech reads selected by industry experts</p>
       </div>
-      <div class="">
+      <div class="display-in-line bottom-space">
         <img src="./assets/images/icon-check.svg" alt="check">
         <p>Virtual and in-person meetups for deep-dive discussions</p>
       </div>
-      <div class="">
+      <div class="display-in-line bottom-space">
         <img src="./assets/images/icon-check.svg" alt="check">
         <p>Early access to new tech book releases</p>
       </div>
-      <div class="">
+      <div class="display-in-line bottom-space">
         <img src="./assets/images/icon-check.svg" alt="check">
         <p>Author Q&A sessions with tech thought leaders</p>
       </div>
@@ -65,71 +69,91 @@
     <picture>
       <source media="(min-width: 1024px)" srcset="./assets/images/image-read-together-desktop.webp">
       <source media="(min-width: 780px)" srcset="./assets/images/image-read-together-tablet.webp">
-      <img src="./assets/images/image-read-together-mobile.webp" alt="people reading books together">
+      <img class="main__image" src="./assets/images/image-read-together-mobile.webp" alt="people reading books together">
     </picture>
   </section>
-  <section class="main__container">
+  <!-- third section not your average book club -->
+  <section class="main relative-container">
     <div class="main__content">
-      <h2 class="main__subtitle">Not your average book club</h2>
-      <img src="./assets/images/pattern-circle.png" alt="">
+      <h2 class="main__title main__title--small">Not your average book <span class="relative-container">club
+        <img class="decorative-circle" src="./assets/images/pattern-circle.png" alt="">
+      </span></h2>
       <p class="main__description">Connect with a community that speaks your language - from Python to TypeScript and 
   everything in between. Our discussions blend technical depth with practical applications.</p>
     </div>
     <picture>
       <source media="(min-width: 1024px)" srcset="./assets/images/image-not-average-desktop.webp">
       <source media="(min-width: 780px)" srcset="./assets/images/image-not-average-tablet.webp">
-      <img src="./assets/images/image-not-average-mobile.webp" alt="people discussing books together">
+      <img class="main__image" src="./assets/images/image-not-average-mobile.webp" alt="people discussing books together">
     </picture>
+    <div class="social">
+      <img src="./assets/images/logos-tech.svg" alt="logos of tech companies">
+    </div>
   </section>
-  <section class="main__container">
+
+  <!-- fourth section your tech reading journey -->
+  <section class="main main--stretch">
     <div class="main__content">   
-        <h2 class="main__subtitle">Your tech reading journey</h2>
-      <p class="border">1</p>
-      <p >Choose your membership tier</p>
-      <p class="border">2</p>
-      <p >Get your monthly book selection</p>
-      <p class="border">3</p>
-      <p >Join our discussion forums</p>
-      <p class="border">4</p>
-      <p >Attend exclusive meetups</p>
+        <h2 class="main__title main__title--small main__title--center">Your tech reading journey</h2>
+        <ul class="main__list">
+          <li class="main__item">
+            <p class="index">1</p>
+            <p >Choose your membership tier</p>
+          </li>
+          <li class="main__item">
+            <img class="arrow" src="./assets/images/pattern-arrow.svg" alt="">
+            <p class="index">2</p>
+            <p >Get your monthly book selection</p>
+          </li>
+          <li class="main__item">
+            <img class="arrow" src="./assets/images/pattern-arrow.svg" alt="">
+            <p class="index">3</p>
+            <p >Join our discussion forums</p>
+          </li>
+          <li class="main__item">
+            <img class="arrow" src="./assets/images/pattern-arrow.svg" alt="">
+            <p class="index">4</p>
+            <p >Attend exclusive meetups</p>
+          </li>
+        </ul>      
     </div>
     </section>  
-    <section class="main__container">
-      <h2 class="main__subtitle"> Membership options</h2>
-      <article class="">
-        <p class="">Starter</p>
-        <p class=""><span class="">$19</span>/month</p>
-        <hr>
-        <img src="./assets/images/icon-check.svg" alt="check">
-        <p> 1 book/month</p>
-        <img src="./assets/images/icon-check.svg" alt="check">
-        <p> Online forums</p>
-        <button class="main__btn">Subscribe now</button>
-      </article>
-      <article class="">
-        <p class="">Pro</p>
-        <p class=""><span class="">$29</span>/month</p>
-        <hr>
-        <img src="./assets/images/icon-check.svg" alt="check">
-        <p> 2 books/month</p>
-        <img src="./assets/images/icon-check.svg" alt="check">
-        <p>Virtual meetups</p>
-        <button class="main__btn">Subscribe now</button>
-      </article>
-      <article class="">
-        <p class="">Enterprise</p>
-        <p class=""><span class="">Custom</span></p>
-        <hr>
-        <img src="./assets/images/icon-check.svg" alt="check">
-        <p>Team access</p>
-        <img src="./assets/images/icon-check.svg" alt="check">
-        <p>Private sessions</p>
-        <button class="main__btn">Talk to us</button>
-      </article>
+    <!--fisth section-->
+    <section class="main main--column">
+      
+      <h2 class="main__title main-title--small main__title--center"> Membership options</h2>
+      <div class="display-grid">
+        <article class="main__article">
+          <p class="main__title--smaller">Starter</p>
+          <p class="display-in-line"><span class="main__text--bold">$19</span>/month</p>
+          <hr class="main__breake">
+          <p class="display-in-line"><img src="./assets/images/icon-check.svg" alt="check"> 1 book/month</p>
+          <p class="display-in-line"> <img src="./assets/images/icon-check.svg" alt="check"> Online forums</p>
+          <button class="main__btn">Subscribe now</button>
+        </article>
+        <article class="main__article">
+          <p class="main__title--smaller">Pro</p>
+          <p class="display-in-line"><span class="main__text--bold">$29</span>/month</p>
+          <hr>
+          
+          <p class="display-in-line"><img src="./assets/images/icon-check.svg" alt="check"> 2 books/month</p>
+          
+          <p class="display-in-line"><img src="./assets/images/icon-check.svg" alt="check"> Virtual meetups</p>
+          <button class="main__btn">Subscribe now</button>
+        </article>
+        <article class="main__article">
+          <p class="main__title--smaller">Enterprise</p>
+          <p class="display-in-line"><span class="main__text--bold">Custom</span></p>
+          <hr>
+          <p class="display-in-line"><img src="./assets/images/icon-check.svg" alt="check"> Team access</p>
+          <p class="display-in-line"><img src="./assets/images/icon-check.svg" alt="check"> Private sessions</p>
+          <button class="main__btn">Talk to us</button>
+        </article>
+      </div>
     </section>
     <section class="main__container">
       <div class="main__content">
-        <h2 class="main__subtitle visual__hidden">What our members say</h2>
+        <h2 class="main__subtitle visually__hidden">What our members say</h2>
         <div aria-label="5 out of 5 stars">
           <img src="./assets/images/icon-star.svg" alt="">
           <img src="./assets/images/icon-star.svg" alt="">
