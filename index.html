@@ -27,7 +27,7 @@
       <div class="main__member display-in-line">
         <img class="main__member-avatar" src="./assets/images/image-avatars.webp" alt="Member avatars">
         <div>
-          <div class="member__counter" aria-label="5 out of 5 stars">
+          <div class="member__counter star-rating" aria-label="5 out of 5 stars">
             <img src="./assets/images/icon-star.svg" alt="">
             <img src="./assets/images/icon-star.svg" alt="">
             <img src="./assets/images/icon-star.svg" alt="">
@@ -118,10 +118,9 @@
         </ul>      
     </div>
     </section>  
-    <!--fisth section-->
+    <!--fisth section membership options-->
     <section class="main main--column">
-      
-      <h2 class="main__title main-title--small main__title--center"> Membership options</h2>
+      <h2 class="main__title main__title--small main__title--center"> Membership options</h2>
       <div class="display-grid">
         <article class="main__article">
           <p class="main__title--smaller">Starter</p>
@@ -134,65 +133,69 @@
         <article class="main__article">
           <p class="main__title--smaller">Pro</p>
           <p class="display-in-line"><span class="main__text--bold">$29</span>/month</p>
-          <hr>
-          
+          <hr class="main__breake"> 
           <p class="display-in-line"><img src="./assets/images/icon-check.svg" alt="check"> 2 books/month</p>
-          
           <p class="display-in-line"><img src="./assets/images/icon-check.svg" alt="check"> Virtual meetups</p>
           <button class="main__btn">Subscribe now</button>
         </article>
         <article class="main__article">
           <p class="main__title--smaller">Enterprise</p>
           <p class="display-in-line"><span class="main__text--bold">Custom</span></p>
-          <hr>
+          <hr class="main__breake">
           <p class="display-in-line"><img src="./assets/images/icon-check.svg" alt="check"> Team access</p>
           <p class="display-in-line"><img src="./assets/images/icon-check.svg" alt="check"> Private sessions</p>
           <button class="main__btn">Talk to us</button>
         </article>
       </div>
     </section>
-    <section class="main__container">
-      <div class="main__content">
+    <section class="main ">
+      
         <h2 class="main__subtitle visually__hidden">What our members say</h2>
-        <div aria-label="5 out of 5 stars">
+        <div class="star-rating" aria-label="5 out of 5 stars">
           <img src="./assets/images/icon-star.svg" alt="">
           <img src="./assets/images/icon-star.svg" alt="">
           <img src="./assets/images/icon-star.svg" alt="">
           <img src="./assets/images/icon-star.svg" alt="">
           <img src="./assets/images/icon-star.svg" alt="">
         </div>
-          <blockquote>
+          <blockquote class="blockquote">
             <p>"This book club transformed my technical reading from a solitary 
               activity into an enriching community experience. The discussions 
               are gold!"</p>
+            </blockquote>
             <p> Sarah Chen, Software Architect</p>
-          </blockquote>
-      </div>
+          
       </section>  
       </main> 
-      <footer>
-        <h2 class="">
+
+      <footer class="footer">
+        <h2 class="main__title--small">
           Ready to debug your reading list?
         </h2>
-        <button class="main__btn">Review membership options 
-        <img src="./assets/images/icon-arrow-up.svg" alt="">
-      </button>
-      <div class="flex">
-        <img src="./assets/images/image-avatars.webp" alt="Member avatars">
-        <div class="memberas__counter" aria-label="5 out of 5 stars">
-          <img src="./assets/images/icon-star.svg" alt="">
-          <img src="./assets/images/icon-star.svg" alt="">
-          <img src="./assets/images/icon-star.svg" alt="">
-          <img src="./assets/images/icon-star.svg" alt="">
-          <img src="./assets/images/icon-star.svg" alt="">
-          <p>200+ developers joined already</p>
+        <button class="main__btn main__btn--light">Review membership options 
+          <img src="./assets/images/icon-arrow-up.svg" alt="">
+        </button>
+        <div class="display-in-line ">
+          <img class="main__member-avatar" src="./assets/images/image-avatars.webp" alt="Member avatars">
+          <div>
+            <div class="member__counter star-rating" aria-label="5 out of 5 stars">
+              <img src="./assets/images/icon-star.svg" alt="">
+              <img src="./assets/images/icon-star.svg" alt="">
+              <img src="./assets/images/icon-star.svg" alt="">
+              <img src="./assets/images/icon-star.svg" alt="">
+              <img src="./assets/images/icon-star.svg" alt="">
+            </div>
+            <p>200+ developers joined already</p>
+          </div>
         </div>
-        <hr>
-        <p> &copy; 2024 - Tech Book Club</p>
-        <div class="">
-          <img src="./assets/images/logo-bluesky.svg" alt="BlueSky">
-          <img src="./assets/images/logo-linkedin.svg" alt="LinkedIn">
+        <hr class="main__breake">
+        <div class="media">
+          <p> &copy; 2024 - Tech Book Club</p>
+          <div class="">
+            <img src="./assets/images/logo-bluesky.svg" alt="BlueSky">
+            <img src="./assets/images/logo-linkedin.svg" alt="LinkedIn">
+          </div>
         </div>
-
+      </footer>
 </body>
 </html>

@@ -37,7 +37,6 @@ body {
   display: flex;
   flex-direction: column;
   align-self: center;
-  padding: 1.5rem 1rem;
   color: var(--neutral-700);
   font-family: "Inter";
   font-weight: 400;
@@ -45,16 +44,6 @@ body {
   line-height: 140%;
   letter-spacing: -0.5px;
   overflow-x: hidden;
-}
-@media (min-width: 48rem) {
-  body {
-    padding: 2rem;
-  }
-}
-@media (min-width: 64rem) {
-  body {
-    padding: 2rem 8.4375rem;
-  }
 }
 
 .display-in-line {
@@ -133,37 +122,70 @@ body {
   }
 }
 
-.main {
+.blockquote {
+  margin-block: 2rem;
+  font-family: "Martian Mono";
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 110%;
+  letter-spacing: -1px;
+  color: var(--neutral-900);
+}
+@media (min-width: 48rem) {
+  .blockquote {
+    font-family: "Martian Mono";
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 130%;
+    letter-spacing: -1px;
+  }
+}
+@media (min-width: 64rem) {
+  .blockquote {
+    text-align: center;
+  }
+}
+
+.main, .footer {
   display: flex;
   flex-direction: column;
   gap: 4rem;
   padding: 3rem 0 4rem;
+  margin: 1.5rem 1rem;
 }
 @media (min-width: 48rem) {
-  .main {
+  .main, .footer {
     padding: 4rem 0 5rem;
+    margin: 2rem;
   }
 }
 @media (min-width: 64rem) {
-  .main {
+  .main, .footer {
     flex-direction: row;
     padding: 5rem 0;
+    margin: 2rem 8.4375rem;
   }
 }
 @media (min-width: 64rem) {
-  .main--reverse {
+  .main--reverse, .footer--reverse {
     flex-direction: row-reverse;
   }
 }
 @media (min-width: 64rem) {
-  .main--column {
+  .main--column, .footer--column {
     flex-direction: column;
   }
 }
-.main__breake {
-  border: 1px solid var(--neutral-200);
+.main--review, .footer--review {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
-.main__title {
+.main__breake, .footer__breake {
+  border: 1px solid var(--neutral-200);
+  width: 100%;
+}
+.main__title, .footer__title {
   font-family: "Martian Mono";
   font-weight: 700;
   font-size: 38px;
@@ -172,14 +194,14 @@ body {
   color: var(--neutral-900);
   margin-bottom: 2rem;
 }
-.main__title--small {
+.main__title--small, .footer__title--small {
   font-family: "Martian Mono";
   font-weight: 600;
   font-size: 34px;
   line-height: 130%;
   letter-spacing: -2px;
 }
-.main__title--smaller {
+.main__title--smaller, .footer__title--smaller {
   font-family: "Martian Mono";
   font-weight: 400;
   font-size: 24px;
@@ -188,7 +210,7 @@ body {
   color: var(--neutral-900);
 }
 @media (min-width: 48rem) {
-  .main__title {
+  .main__title, .footer__title {
     font-family: "Martian Mono";
     font-weight: 700;
     font-size: 62px;
@@ -196,18 +218,18 @@ body {
     letter-spacing: -2px;
     margin-bottom: 1.5rem;
   }
-  .main__title--small {
+  .main__title--small, .footer__title--small {
     font-family: "Martian Mono";
     font-weight: 600;
     font-size: 50px;
     line-height: 130%;
     letter-spacing: -2px;
   }
-  .main__title--center {
+  .main__title--center, .footer__title--center {
     text-align: center;
   }
 }
-.main__btn {
+.main__btn, .footer__btn {
   width: 100%;
   max-width: 30rem;
   border-radius: 8px;
@@ -223,7 +245,7 @@ body {
   letter-spacing: -1px;
 }
 @media (min-width: 64rem) {
-  .main__btn {
+  .main__btn, .footer__btn {
     font-family: "Martian Mono";
     font-weight: 600;
     font-size: 18px;
@@ -231,7 +253,11 @@ body {
     letter-spacing: -1px;
   }
 }
-.main__member {
+.main__btn--light, .footer__btn--light {
+  border-color: var(--neutral-100);
+  color: var(--neutral-100);
+}
+.main__member, .footer__member {
   width: 100%;
   max-width: 30rem;
   justify-content: start;
@@ -242,33 +268,33 @@ body {
   line-height: 120%;
   letter-spacing: -1px;
 }
-.main__member-avatar {
+.main__member-avatar, .footer__member-avatar {
   width: 30%;
   justify-content: start;
 }
 @media (min-width: 64rem) {
-  .main__content {
+  .main__content, .footer__content {
     min-width: 25rem;
     margin: auto;
     flex-grow: 1;
   }
 }
-.main__image {
+.main__image, .footer__image {
   border-radius: 5px;
 }
 @media (min-width: 48rem) {
-  .main__image {
+  .main__image, .footer__image {
     border-radius: 10px;
   }
 }
 @media (min-width: 64rem) {
-  .main__image {
+  .main__image, .footer__image {
     display: flex;
     width: auto;
     border-radius: 8px;
   }
 }
-.main__text--bold {
+.main__text--bold, .footer__text--bold {
   font-family: "Martian Mono";
   font-weight: 600;
   font-size: 34px;
@@ -276,7 +302,7 @@ body {
   letter-spacing: -1px;
   color: var(--neutral-900);
 }
-.main__item {
+.main__item, .footer__item {
   list-style: none;
   position: relative;
   font-family: "Martian Mono";
@@ -289,7 +315,7 @@ body {
   margin-left: 1rem;
 }
 @media (min-width: 48rem) {
-  .main__item {
+  .main__item, .footer__item {
     font-family: "Martian Mono";
     font-weight: 600;
     font-size: 18px;
@@ -299,18 +325,35 @@ body {
   }
 }
 @media (min-width: 64rem) {
-  .main__list {
+  .main__list, .footer__list {
     display: flex;
     justify-content: space-between;
   }
 }
-.main__article {
+.main__article, .footer__article {
+  border: 1px solid var(--neutral-200);
+  border-radius: 5px;
+  padding: 1.5rem;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
   margin: 1.5rem;
 }
 
+.footer {
+  background-color: var(--neutral-900);
+  border-radius: 5px;
+  color: var(--neutral-100);
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 64rem) {
+  .main:last-of-type, .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .visually__hidden {
   position: absolute;
   width: 1px;
@@ -318,4 +361,38 @@ body {
   padding: 0;
   margin: -1px;
   opacity: 0;
+}
+
+.media {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+@media (min-width: 48rem) {
+  .media {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding-inline: 1rem;
+  }
+}
+
+.star-rating {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.check-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.check-item img {
+  flex-shrink: 0;
+  width: auto;
+}
+.check-item p {
+  margin: 0;
 }/*# sourceMappingURL=styles.css.map */
