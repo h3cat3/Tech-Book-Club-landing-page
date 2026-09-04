@@ -45,7 +45,7 @@ Build a landing page for Tech Book Club where users can:
 ### Links
 
 - Solution URL: [GitHub Repository](https://github.com/yourusername/Tech-Book-Club-landing-page)
-- Live Site URL: [View Live Site](https://your-live-site-url.com)
+- Live Site URL: [View Live Site](https://h3cat3.github.io/Tech-Book-Club-landing-page/)
 
 ## My process
 
@@ -82,10 +82,9 @@ Used SCSS mixins for text styles that scale appropriately:
 
 ## Author
 
-**Created by:** [Your Name]  
-**GitHub:** [@yourusername](https://www.github.com/yourusername)  
-**Frontend Mentor:** [@yourusername](https://www.frontendmentor.io/profile/yourusername)  
-**Twitter/X:** [@yourusername](https://www.twitter.com/yourusername)
+**Created by:** [Catalina Mackay]  
+**GitHub:** [@h3cat3](https://www.github.com/h3cat3)  
+**Frontend Mentor:** [@h3cat3](https://www.frontendmentor.io/profile/h3cat3)  
 
 ### AI-Assisted Development
 
