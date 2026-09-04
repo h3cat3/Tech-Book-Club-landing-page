@@ -39,7 +39,7 @@ body{
 }
 .display-grid{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(21rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(21rem, 100%), 1fr));
     gap: 1.5rem;
     justify-content: space-between;
 }
@@ -181,6 +181,13 @@ body{
         &--light{
             border-color: var(--neutral-100);
             color: var(--neutral-100);
+            background-color: var(--neutral-900);
+        }
+        &:hover{
+            scale: 1.1
+        }
+        &:focus, &:focus-visible, &:active{
+            border-style: double;
         }
     }
     &__member{
@@ -258,11 +265,7 @@ body{
     color: var(--neutral-100);
      flex-direction: column;
     align-items: center;
-    & button{
-        border-color: var(--neutral-100);
-        color: var(--neutral-100);
-        background-color: var(--neutral-900);
-    }
+    
 }
  @media (min-width: 64rem) {
         .main:last-of-type,.footer{
