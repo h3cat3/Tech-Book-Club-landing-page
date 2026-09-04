@@ -37,7 +37,7 @@ body {
   color: var(--neutral-700);
   font-family: "Inter";
   font-weight: 400;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 140%;
   letter-spacing: -0.5px;
   overflow-x: hidden;
@@ -123,7 +123,7 @@ body {
   margin-block: 2rem;
   font-family: "Martian Mono";
   font-weight: 600;
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 110%;
   letter-spacing: -1px;
   color: var(--neutral-900);
@@ -132,7 +132,7 @@ body {
   .blockquote {
     font-family: "Martian Mono";
     font-weight: 600;
-    font-size: 34px;
+    font-size: 2.125rem;
     line-height: 130%;
     letter-spacing: -1px;
   }
@@ -185,7 +185,7 @@ body {
 .main__title, .footer__title {
   font-family: "Martian Mono";
   font-weight: 700;
-  font-size: 38px;
+  font-size: 2.375rem;
   line-height: 120%;
   letter-spacing: -2px;
   color: var(--neutral-900);
@@ -194,14 +194,14 @@ body {
 .main__title--small, .footer__title--small {
   font-family: "Martian Mono";
   font-weight: 600;
-  font-size: 34px;
+  font-size: 2.125rem;
   line-height: 130%;
   letter-spacing: -2px;
 }
 .main__title--smaller, .footer__title--smaller {
   font-family: "Martian Mono";
   font-weight: 400;
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 110%;
   letter-spacing: -1px;
   color: var(--neutral-900);
@@ -210,7 +210,7 @@ body {
   .main__title, .footer__title {
     font-family: "Martian Mono";
     font-weight: 700;
-    font-size: 62px;
+    font-size: 3.875rem;
     line-height: 120%;
     letter-spacing: -2px;
     margin-bottom: 1.5rem;
@@ -218,7 +218,7 @@ body {
   .main__title--small, .footer__title--small {
     font-family: "Martian Mono";
     font-weight: 600;
-    font-size: 50px;
+    font-size: 3.125rem;
     line-height: 130%;
     letter-spacing: -2px;
   }
@@ -239,7 +239,7 @@ body {
   cursor: pointer;
   font-family: "Martian Mono";
   font-weight: 600;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 130%;
   letter-spacing: -1px;
 }
@@ -247,7 +247,7 @@ body {
   .main__btn, .footer__btn {
     font-family: "Martian Mono";
     font-weight: 600;
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 130%;
     letter-spacing: -1px;
   }
@@ -263,7 +263,7 @@ body {
   margin-top: 1.25rem;
   font-family: "Martian Mono";
   font-weight: 400;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 120%;
   letter-spacing: -1px;
 }
@@ -296,7 +296,7 @@ body {
 .main__text--bold, .footer__text--bold {
   font-family: "Martian Mono";
   font-weight: 600;
-  font-size: 34px;
+  font-size: 2.125rem;
   line-height: 130%;
   letter-spacing: -1px;
   color: var(--neutral-900);
@@ -306,7 +306,7 @@ body {
   position: relative;
   font-family: "Martian Mono";
   font-weight: 600;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 130%;
   letter-spacing: -1px;
   color: var(--neutral-900);
@@ -317,7 +317,7 @@ body {
   .main__item, .footer__item {
     font-family: "Martian Mono";
     font-weight: 600;
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 130%;
     letter-spacing: -1px;
     margin: 2rem;
