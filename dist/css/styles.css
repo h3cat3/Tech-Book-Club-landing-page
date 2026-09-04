@@ -255,6 +255,13 @@ body {
 .main__btn--light, .footer__btn--light {
   border-color: var(--neutral-100);
   color: var(--neutral-100);
+  background-color: var(--neutral-900);
+}
+.main__btn:hover, .footer__btn:hover {
+  scale: 1.1;
+}
+.main__btn:focus, .main__btn:focus-visible, .main__btn:active, .footer__btn:focus, .footer__btn:focus-visible, .footer__btn:active {
+  border-style: double;
 }
 .main__member, .footer__member {
   width: 100%;
@@ -344,11 +351,6 @@ body {
   color: var(--neutral-100);
   flex-direction: column;
   align-items: center;
-}
-.footer button {
-  border-color: var(--neutral-100);
-  color: var(--neutral-100);
-  background-color: var(--neutral-900);
 }
 
 @media (min-width: 64rem) {
