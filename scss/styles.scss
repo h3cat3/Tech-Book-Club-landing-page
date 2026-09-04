@@ -15,9 +15,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: inherit;
-    border: none;
-    text-decoration: none;
+
 }
 img{
     max-width: 100%;
@@ -174,7 +172,8 @@ body{
         margin: 1.5rem 0 1.25rem;
         text-transform: uppercase;
         color: var(--neutral-900);
-        
+        background-color: var(--neutral-100);
+        cursor: pointer;
         @include text-style(text-6-mobile);
         @media (min-width: 64rem) {
             @include text-style(text-6);
@@ -260,6 +259,11 @@ body{
     color: var(--neutral-100);
      flex-direction: column;
     align-items: center;
+    & button{
+        border-color: var(--neutral-100);
+        color: var(--neutral-100);
+        background-color: var(--neutral-900);
+    }
 }
  @media (min-width: 64rem) {
         .main:last-of-type,.footer{
